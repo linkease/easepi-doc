@@ -50,13 +50,19 @@ module.exports = {
                 lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
-                    {
-                        text: '下载', items: [
+                    { text: '指南', link: '/zh/guide/' },
+					{
+                        text: '视频号', items: [
+                            { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
+                            { text: '头条号', link: 'https://bit.ly/3cFVAuY' },
+                        ]
+                    },
+                   {
+                        text: '探索科技', items: [
                             { text: '易有云软件', link: 'https://www.linkease.com/' },
                             { text: 'DDNSTO', link: 'https://www.ddnsto.com/' },
                         ]
                     },
-                    { text: '指南', link: '/zh/guide/' },
                     {
                         text: '关于', items: [
                             { text: '问题反馈', link: 'https://github.com/linkease/LinkPi-doc/issues' },
@@ -75,7 +81,12 @@ module.exports = {
                             collapsable: true,
                             sidebarDepth: 2,
                             children: [
-                                ["", "介绍"],
+                                ["", "产品介绍"],
+                                ["quick", "快速入门"],
+                                ["common", "基础玩法"],
+                                ["advanced", "高阶玩法"],
+                                ["opensource", "固件开源"],
+                                ["question", "常见问题"],								
                                 ["about", "联系我们"],
                             ]
                         },

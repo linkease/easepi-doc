@@ -50,4 +50,4 @@
 
 ​												QQ交流群1~5群已满人，请加6群，群号：726390063
 
-![img](./koolshare_merlin/qq-5.jpeg)
+![img](./about/qq.jpg)
