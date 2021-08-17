@@ -1,5 +1,5 @@
 # 安装包
-npm install --registry=https://registry.npm.taobao.org
+npm install
 
 # 开发模式
 npm run dev
