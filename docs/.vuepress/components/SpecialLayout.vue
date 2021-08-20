@@ -15,9 +15,15 @@ export default {
     position: absolute;
     background: none !important;
     border-bottom: none;
+    /* padding: 0.7rem 14.5rem; */
+    /* border-bottom: 1px solid #999; */
+    /* position: fixed;
+    top: 0;
+    left: 0; */
 }
 #home >>> .navbar .links {
     background: none !important;
+    /* right: 14.5rem; */
 }
 </style>
 <style lang="scss" scoped>

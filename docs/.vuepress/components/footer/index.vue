@@ -17,7 +17,6 @@ export default {
     padding-top: 100px;
     height: 200px;
     width: 100%;
-    background: #000;
     .footer_content {
         max-width: 1428px;
         margin: 0 auto;

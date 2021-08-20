@@ -3,19 +3,18 @@
         <div class="banner">
             <div class="banner_img" :style="bannerStyle">
                 <div class="banner_content">
-                    <div class="banner_text">
-                        <div class="banner_title">DDR4 4GB | eMMC 5.0 8GB</div>
+                    <div class="banner_text max_width">
+                        <div class="banner_title">DDR4 4GB | eMMC 5.0 8GB | 4核 RTD1296</div>
                         <div class="banner_tit">EasePi ARS2</div>
-                        <div class="banner_info">EasePi ARS2，是易有云团队推出的基于<br />RTD1296处理器且带存储的软路由开发板。
-                        </div>
-                        <div class="banner_describe">RTD1296 1.4GHz x4
+                        <div class="banner_info">EasePi ARS2，是易有云团队推出的基于<br />RTD1296处理器且带存储的软路由开发板
                         </div>
                         <div class="banner_poster">
                             <a href="#" class="banner_btn">立即抢购</a>
                             <div class="banner_prices">
-                                <span class="banner_price">¥618</span>
-                                <span class="banner_priceinfo">早鸟价</span>
+                                <div class="banner_price">¥618</div>
+                                <img :src="icon_tag">
                             </div>
+
                         </div>
                     </div>
 
@@ -25,11 +24,10 @@
         </div>
         <div class="introduce1">
             <div class="introduce1_img" :style="introduce1Style">
-                <div class="introduce1_content">
+                <div class="introduce1_content max_width">
                     <div class="introduce1_info">
                         <div class="introduce1_title">ARS2</div>
-                        <div class="introduce1_tit">丰富的接口和强劲的性能,不再限制
-                            你的创意和想法
+                        <div class="introduce1_tit">丰富的接口和强劲的性能，不再限制你的创意和想法
                         </div>
                     </div>
                 </div>
@@ -40,7 +38,7 @@
         <div class="introduce2">
             <div class="introduce2_img" :style="introduce2Style">
                 <div class="introduce2_content">
-                    <div class="introduce2_text">
+                    <div class="introduce2_text max_width">
                         <div class="introduce2_tit">基本功能</div>
 
                         <div class="introduce2_info">
@@ -48,7 +46,7 @@
                                 <img :src="icon_drop">
                                 <span class="introduce2_infotit">低功率</span>
                             </div>
-                            <p>待机功率3w,更省电</p>
+                            <p>待机功率3w，更省电</p>
                         </div>
 
                         <div class="introduce2_info">
@@ -75,9 +73,9 @@
                         <div class="introduce2_info">
                             <div class="introduce2_ico">
                                 <img :src="icon_rescuemode">
-                                <span class="introduce2_infotit">救援模式与主系统独立</span>
+                                <span class="introduce2_infotit">独立救援模式</span>
                             </div>
-                            <p>轻松解决主系统刷机或配置错误的问题
+                            <p>轻松解决主系统刷机或配置错误
                             </p>
                         </div>
                     </div>
@@ -88,7 +86,7 @@
 
         <div class="introduce3">
             <div class="introduce3_img" :style="introduce3Style">
-                <div class="introduce3_content">
+                <div class="introduce3_content max_width">
                     <div class="introduce3_blocks">
 
                         <div class="introduce3_block">
@@ -109,7 +107,7 @@
 
                         <div class="introduce3_block">
                             <div class="introduce3_info">
-                                <span class="en">VPU</span>
+                                <span class="en">DSP</span>
                                 <p>处理器流媒体硬解码，视频加载更快更清晰</p>
                             </div>
                         </div>
@@ -128,7 +126,7 @@
         </div>
 
         <div class="introduce4">
-            <div class="introduce4_content">
+            <div class="introduce4_content max_width">
                 <div class="tit">软件支持</div>
                 <div class="introduce4_list">
                     <template v-for="(item,i) in apps">
@@ -143,7 +141,7 @@
             </div>
         </div>
         <div class="introduce5">
-            <div class="introduce5_content">
+            <div class="introduce5_content max_width">
                 <div class="tit">产品包含</div>
                 <div class="introduce5_list">
                     <template v-for="(item,i) in product">
@@ -156,7 +154,7 @@
             </div>
         </div>
         <div class="introduce6">
-            <div class="introduce6_content">
+            <div class="introduce6_content max_width">
                 <div class="tit">立即开始</div>
                 <div class="list_tit">材料准备</div>
                 <div class="introduce6_list">
@@ -175,7 +173,7 @@
                     </div>
                 </div>
 
-                <div class="introduce6_content2">
+                <div class="introduce6_content2 max_width">
                     <div class="list_tit">查看文档</div>
                     <div class="content6_block">
                         <div class="block_list">
@@ -208,15 +206,16 @@
 <script>
 import Foodter from './footer/index.vue'
 import { apps, product } from "./apps.js"
-import banner from "../public/home/bg1.png"
-import bg2 from "../public/home/bg2.png"
-import bg3 from "../public/home/bg3.png"
-import bg4 from "../public/home/bg4.png"
+import banner from "../public/home/bg1.jpg"
+import bg2 from "../public/home/bg2.jpg"
+import bg3 from "../public/home/bg3.jpg"
+import bg4 from "../public/home/bg4.jpg"
 import icon_drop from "../public/home/icon_drop.png"
 import icon_media from "../public/home/icon_media.png"
 import icon_rescuemode from "../public/home/icon_rescuemode.png"
 import icon_Soc from "../public/home/icon_Soc.png"
 import arrow from "../public/home/arrow.png"
+import icon_tag from "../public/home/icon_tag.png"
 
 export default {
     components: {
@@ -246,7 +245,8 @@ export default {
             icon_media,
             icon_rescuemode,
             icon_Soc,
-            arrow
+            arrow,
+            icon_tag
 
 
         }
@@ -255,16 +255,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.max_width {
+    max-width: 1664px;
+}
 .body {
     font-family: PingFangSC-Semibold, PingFang SC;
     margin: 0 auto;
+    background: linear-gradient(
+        216deg,
+        #000000 0%,
+        #121212 23%,
+        #0e0e0e 57%,
+        #001835 100%
+    );
     .banner {
-        height: 933px;
+        height: 1080px;
         margin: 0 auto;
         .banner_img {
             width: 100%;
             height: 100%;
-            background-size: cover;
+            background-size: 100% 100%;
         }
 
         .banner_content {
@@ -275,98 +285,79 @@ export default {
             flex-wrap: wrap;
             .banner_text {
                 flex: 0 0 100%;
-                max-width: 1428px;
                 margin: 0 auto;
                 .banner_title {
-                    font-size: 18px;
+                    font-size: 24px;
                     font-family: PingFangSC-Semibold, PingFang SC;
                     font-weight: 600;
                     color: #ff2c3b;
-                    line-height: 25px;
+                    line-height: 33px;
                 }
                 .banner_tit {
-                    font-size: 60px;
+                    font-size: 80px;
+                    font-family: PingFangSC-Semibold, PingFang SC;
                     font-weight: 600;
                     color: #000000;
-                    line-height: 84px;
+                    line-height: 112px;
+                    height: 112px;
                 }
                 .banner_info {
-                    width: 425px;
-                    height: 56px;
-                    font-size: 20px;
+                    font-size: 27px;
                     font-family: PingFangSC-Regular, PingFang SC;
                     font-weight: 400;
                     color: rgba(0, 0, 0, 0.63);
-                    line-height: 28px;
-                    margin: 20px 0 40px 0;
-                }
-                .banner_describe {
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: rgba(0, 0, 0, 0.63);
-                    line-height: 20px;
-                    span {
-                        width: 218px;
-                        height: 20px;
-                        background: #000000;
-                        border-radius: 2px;
-                        font-size: 14px;
-                        font-weight: 600;
-                        color: #ffffff;
-                        line-height: 20px;
-                        padding: 0 16px;
-                        margin-left: 10px;
-                    }
+                    height: 75px;
                 }
                 .banner_poster {
                     margin-top: 60px;
                     display: flex;
+                    align-items: flex-end;
+                    height: 88px;
+                    position: relative;
                     .banner_btn {
-                        display: inline-block;
-                        width: 176px;
-                        height: 66px;
+                        width: 235px;
+                        height: 88px;
                         background: #0060ff;
-                        border-radius: 33px;
-                        font-size: 24px;
+                        border-radius: 11px;
+                        font-size: 32px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
                         font-weight: 600;
                         color: #ffffff;
-                        line-height: 66px;
+                        line-height: 88px;
                         text-align: center;
-                    }
-                    .banner_prices {
-                        text-align: end;
                     }
                     .banner_btn:hover {
                         opacity: 0.9;
                     }
-                    .banner_price {
-                        font-size: 50px;
-                        font-family: Impact;
-                        color: #000000;
-                        line-height: 61px;
-                        margin-left: 28px;
-                    }
-                    .banner_priceinfo {
-                        font-size: 20px;
-                        font-weight: 600;
-                        color: rgba(0, 0, 0, 0.63);
-                        line-height: 28px;
-                        margin-left: 16px;
+                    .banner_prices {
+                        margin-left: 38px;
+                        display: flex;
+                        .banner_price {
+                            font-size: 53px;
+                            font-family: Impact;
+                            color: #000000;
+                            line-height: 53px;
+                        }
+                        img {
+                            width: 60px;
+                            position: absolute;
+                            left: 368px;
+                            top: 0;
+                        }
                     }
                 }
             }
         }
     }
     .introduce1 {
-        height: 1368px;
+        height: 1133px;
 
         .introduce1_img {
             width: 100%;
             height: 100%;
-            background-size: cover;
+            background-size: 100% 100%;
 
             .introduce1_content {
-                max-width: 1428px;
                 margin: 0 auto;
                 text-align: center;
                 position: relative;
@@ -379,25 +370,26 @@ export default {
                         );
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
-                        font-size: 284px;
+                        font-size: 260px;
                         font-weight: bold;
                     }
                     .introduce1_tit {
-                        font-size: 34px;
+                        font-size: 45px;
+                        font-family: PingFangSC-Medium, PingFang SC;
                         font-weight: 500;
                         color: #ffffff;
-                        line-height: 48px;
-                        padding-top: 138px;
+                        line-height: 64px;
+                        padding-top: 92px;
                         position: absolute;
                         top: 132px;
-                        left: 314px;
+                        left: 308px;
                     }
                 }
             }
         }
     }
     .introduce2 {
-        height: 924px;
+        height: 1080px;
         .introduce2_img {
             width: 100%;
             height: 100%;
@@ -409,13 +401,15 @@ export default {
                 align-items: center;
                 .introduce2_text {
                     flex: 0 0 100%;
-                    max-width: 1428px;
                     margin: 0 auto;
                     .introduce2_tit {
-                        font-size: 60px;
+                        width: 320px;
+                        height: 112px;
+                        font-size: 80px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
                         font-weight: 600;
                         color: #d2b56b;
-                        line-height: 84px;
+                        line-height: 112px;
                         margin-bottom: 54px;
                     }
                     .introduce2_info {
@@ -423,12 +417,13 @@ export default {
                         .introduce2_ico {
                             display: flex;
                             align-items: center;
+                            padding-bottom: 19px;
                             img {
-                                width: 24px;
-                                height: 24px;
+                                width: 32px;
+                                height: 32px;
                             }
                             .introduce2_infotit {
-                                font-size: 24px;
+                                font-size: 32px;
                                 font-weight: 600;
                                 color: #ffffff;
                                 line-height: 34px;
@@ -436,11 +431,10 @@ export default {
                             }
                         }
                         p {
-                            font-size: 14px;
-                            font-weight: 400;
+                            font-size: 19px;
                             color: #ffffff;
-                            line-height: 20px;
                             padding-left: 43px;
+                            line-height: 16px;
                         }
                     }
                 }
@@ -448,13 +442,12 @@ export default {
         }
     }
     .introduce3 {
-        height: 1002px;
+        height: 1080px;
         .introduce3_img {
             width: 100%;
             height: 100%;
-            background-size: cover;
+            background-size: 100% 100%;
             .introduce3_content {
-                max-width: 1428px;
                 margin: 0 auto;
                 .introduce3_blocks {
                     padding-top: 252px;
@@ -465,30 +458,29 @@ export default {
                     .introduce3_block {
                         flex: 0 0 100%;
                         max-width: calc(50% - 20px);
-                        height: 206px;
+                        height: 275px;
                         margin-bottom: 32px;
                         position: relative;
                         border-radius: 16px;
                         .introduce3_info {
-                            padding-left: 62px;
+                            padding-left: 83px;
                             padding-top: 12px;
                             color: #d2b56b;
                             .num {
                                 font-family: Impact;
-                                font-size: 100px;
+                                font-size: 133px;
                             }
                             .letter {
-                                font-size: 100px;
+                                font-size: 107px;
                                 font-family: Helvetica Neue Bold;
-                                font-size: 80px;
                                 font-weight: bold;
                             }
                             .en {
-                                font-size: 100px;
+                                font-size: 133px;
                                 font-family: DINAlternate-Bold, DINAlternate;
                             }
                             p {
-                                font-size: 20px;
+                                font-size: 27px;
                                 font-family: PingFangSC-Regular, PingFang SC;
                                 font-weight: 400;
                                 color: #ffffff;
@@ -517,10 +509,8 @@ export default {
     }
     .introduce4 {
         height: 800px;
-        background: #000;
 
         .introduce4_content {
-            max-width: 1428px;
             margin: 0 auto;
             .introduce4_list {
                 display: flex;
@@ -531,20 +521,20 @@ export default {
                     text-align: center;
                     flex: 0 0 100%;
                     max-width: calc(20% - 10px);
-                    height: 208px;
                     padding: 28px 0;
                     .introduce4_img {
-                        width: 168px;
-                        height: 168px;
+                        width: 224px;
+                        height: 224px;
                         background: #d7d7d7;
-                        border-radius: 120px;
+                        border-radius: 160px;
                         margin: 0 auto;
+                        // margin-bottom: 52px;
                     }
                     p {
-                        font-size: 20px;
+                        font-size: 27px;
                         font-weight: 500;
                         color: #ffffff;
-                        line-height: 28px;
+                        line-height: 37px;
                     }
                 }
             }
@@ -552,9 +542,8 @@ export default {
     }
     .introduce5 {
         height: 600px;
-        background: #333;
+        margin-top: 318px;
         .introduce5_content {
-            max-width: 1428px;
             margin: 0 auto;
             .introduce5_list {
                 display: flex;
@@ -567,7 +556,7 @@ export default {
                     text-align: center;
                     .introduce5_block {
                         width: 100%;
-                        height: 206px;
+                        height: 275px;
                         background: linear-gradient(
                             225deg,
                             rgba(255, 255, 255, 0.81) 0%,
@@ -577,7 +566,7 @@ export default {
                         opacity: 0.23;
                     }
                     p {
-                        font-size: 20px;
+                        font-size: 27px;
                         font-weight: 400;
                         color: #ffffff;
                         line-height: 28px;
@@ -588,22 +577,22 @@ export default {
     }
     .introduce6 {
         height: 100%;
-        background: #000;
+        margin-top: 168px;
         .introduce6_content {
-            max-width: 1428px;
             margin: 0 auto;
             .list_tit {
-                font-size: 32px;
+                font-size: 43px;
                 font-weight: 600;
                 color: #ffffff;
                 line-height: 45px;
             }
             .introduce6_list {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
                 .list_block {
-                    height: 348px;
+                    height: 464px;
                     width: 100%;
                     max-width: calc(50% - 20px);
                     background: rgba(255, 255, 255, 0.15);
@@ -614,7 +603,7 @@ export default {
                         background: rgba(255, 255, 255, 0.34);
                         border-top-left-radius: 16px;
                         border-top-right-radius: 16px;
-                        font-size: 24px;
+                        font-size: 32px;
                         font-weight: 500;
                         color: #ffffff;
                         line-height: 98px;
@@ -625,13 +614,15 @@ export default {
                         padding: 0 32px;
                     }
                     .block_info {
-                        font-size: 24px;
+                        font-size: 32px;
                         font-weight: 500;
                         color: #ffffff;
-                        line-height: 82px;
+                        // line-height: 82px;
                         border-bottom: 2px solid #222;
                         height: 82px;
                         padding-left: 32px;
+                        display: flex;
+                        align-items: center;
                     }
                     .block_info:last-child {
                         border-bottom: none;
@@ -654,7 +645,7 @@ export default {
                 .content6_block {
                     border-radius: 16px;
                     width: 100%;
-                    height: 400px;
+                    height: 533px;
                     background: rgba(255, 255, 255, 0.15);
                     .block_list {
                         padding: 0 32px;
@@ -665,16 +656,14 @@ export default {
                             color: #ffffff;
                             width: 100%;
                             line-height: 82px;
-                            height: 82px;
+                            height: 109px;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
                             flex-wrap: wrap;
                             border-bottom: 2px solid #222;
                             .block_info {
-                                height: 100%;
-
-                                font-size: 24px;
+                                font-size: 32px;
                                 font-weight: 500;
                             }
                             img {
@@ -697,12 +686,161 @@ export default {
 }
 .tit {
     text-align: center;
-    font-size: 60px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
-    color: #d2b56b;
     line-height: 84px;
-    padding-top: 100px;
-    margin-bottom: 42px;
+    padding-top: 54px;
+    margin-bottom: 94px;
+    font-size: 80px;
+    color: #d2b56b;
+    line-height: 112px;
+}
+</style>
+
+
+<style lang="scss" scoped>
+@media screen and (max-width: 1440px) {
+    .body {
+        .max_width {
+            max-width: 1080px;
+        }
+        .introduce1 {
+            height: 1260px;
+            .introduce1_img {
+                .introduce1_content {
+                    .introduce1_info {
+                        .introduce1_tit {
+                            left: 148px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .introduce3 {
+            height: 900px;
+            .introduce3_img {
+                .introduce3_content {
+                    .introduce3_blocks {
+                        .introduce3_block {
+                            .introduce3_info {
+                                p {
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .introduce4 {
+            height: 1440px;
+            .introduce4_content {
+                .introduce4_list {
+                    .introduce4_listblock {
+                        max-width: calc(30% - 10px);
+                    }
+                }
+            }
+        }
+
+        .introduce5 {
+            height: 854px;
+            .introduce5_content {
+                .introduce5_list {
+                    .introduce5_blocks {
+                        max-width: calc(50% - 12px);
+                    }
+                }
+            }
+        }
+
+        .introduce6 {
+            .introduce6_content {
+                .introduce6_list {
+                    justify-content: center;
+                    .list_block {
+                        max-width: calc(100% - 12px);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .body {
+        .max_width {
+            max-width: 768px;
+        }
+        .introduce1 {
+            height: 1120px;
+            .introduce1_img {
+                .introduce1_content {
+                    .introduce1_info {
+                        .introduce1_tit {
+                            left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .introduce2 {
+            height: 680px;
+        }
+
+        .introduce3 {
+            height: 900px;
+            .introduce3_img {
+                .introduce3_content {
+                    .introduce3_blocks {
+                        .introduce3_block {
+                            .introduce3_info {
+                                p {
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .introduce4 {
+            height: 1440px;
+            .introduce4_content {
+                .introduce4_list {
+                    .introduce4_listblock {
+                        max-width: calc(30% - 10px);
+                    }
+                }
+            }
+        }
+
+        .introduce5 {
+            height: 854px;
+            .introduce5_content {
+                .introduce5_list {
+                    .introduce5_blocks {
+                        max-width: calc(50% - 12px);
+                    }
+                }
+            }
+        }
+
+        .introduce6 {
+            .introduce6_content {
+                .introduce6_list {
+                    justify-content: center;
+                    .list_block {
+                        max-width: calc(100% - 12px);
+                    }
+                }
+            }
+        }
+    }
 }
 </style>
