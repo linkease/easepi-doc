@@ -269,25 +269,25 @@
                         <div class="right_title" title="文档：">文档：</div>
                         <div class="right_block">
                             <div class="block_info">
-                                <a href="https://easepi.toany.net:9445/zh/guide/" title="1. 如何安装外壳">1. 如何安装外壳
+                                <a href="https://doc.linkease.com/zh/guide/easepi/quick.html#_1-组装" title="1. 如何安装外壳">1. 如何安装外壳
                                     <img :src="arrow">
                                 </a>
                             </div>
 
                             <div class="block_info">
-                                <a href="https://easepi.toany.net:9445/zh/guide/" title="2. 如何配置成软路由">2. 如何配置成软路由
+                                <a href="https://doc.linkease.com/zh/guide/easepi/quick.html#_2-开机" title="2. 如何配置成软路由">2. 如何配置成软路由
                                     <img :src="arrow">
                                 </a>
                             </div>
 
                             <div class="block_info">
-                                <a href="https://easepi.toany.net:9445/zh/guide/" title="3. 如何开启NAS功能">3. 如何开启NAS功能
+                                <a href="https://doc.linkease.com/zh/guide/easepi/common.html#变身nas" title="3. 如何开启NAS功能">3. 如何开启NAS功能
                                     <img :src="arrow">
                                 </a>
                             </div>
 
                             <div class="block_info">
-                                <a href="https://easepi.toany.net:9445/zh/guide/" title="点击查看更多">点击查看更多</a>
+                                <a href="https://doc.linkease.com/zh/guide/easepi/" title="点击查看更多">点击查看更多</a>
                             </div>
 
                         </div>
