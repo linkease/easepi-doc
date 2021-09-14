@@ -87,6 +87,7 @@ module.exports = {
                             sidebarDepth: 2,
                             children: [
                                 ["", "产品介绍"],
+                                ["case", "外壳安装"],
                                 ["quick", "快速使用"],
                                 ["common", "基础玩法"],
                                 ["advanced", "高阶玩法"],
