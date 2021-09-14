@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_Soc</title>
+    <g id="icon_Soc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-13">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="24" height="24" rx="4"></rect>
+            <line x1="6" y1="12" x2="18" y2="12" id="Line-3" stroke="#121114" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="6" y1="12" x2="18" y2="12" id="Line-3" stroke="#121114" stroke-width="2" stroke-linecap="round" transform="translate(12.000000, 12.000000) rotate(90.000000) translate(-12.000000, -12.000000) "></line>
+        </g>
+    </g>
+</svg>

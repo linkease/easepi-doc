@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="68px" viewBox="0 0 120 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pic_bannerprictag</title>
+    <g id="pic_bannerprictag" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="price-tag">
+            <path d="M8,0 L112,0 C116.418278,-8.11624501e-16 120,3.581722 120,8 L120,49 C120,53.418278 116.418278,57 112,57 L37,57 L37,57 C35.6666667,59 34,61 32,63 C30.5176256,64.4823744 28.6690122,65.7816293 26.4541599,66.8977647 L26.4541568,66.8977586 C25.4677596,67.3948359 24.2651658,66.9981637 23.7680885,66.0117665 C23.6909328,65.8586592 23.6337847,65.6962663 23.5980499,65.5285825 C23.225249,63.7792313 22.6925657,62.2697038 22,61 C21,59.1666667 19.6666667,57.8333333 18,57 L8,57 C3.581722,57 5.41083001e-16,53.418278 0,49 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Rectangle" fill-opacity="0.232812841" fill="#FFFFFF"></path>
+            <text id="¥-688" font-family="Impact" font-size="30" font-style="condensed" font-weight="700" line-spacing="40" fill="#FFD732" fill-opacity="0.895857804">
+                <tspan x="26.0961914" y="38">¥ 688</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -25,7 +25,7 @@ make image PROFILE=ars2
 
 
 
-## 构建扩展
+#### 扩展说明
 
 1.如果需要控制打包到固件中的软件包，可以在make image时使用PACKAGES参数，例如想要增加luci-app-passwall，并删除luci-app-ttyd，则执行：
 ```
@@ -50,6 +50,39 @@ src lean_base file:///home/build/lean-openwrt/bin/packages/aarch64_cortex-a53/ba
 ```
 
 
+## 编译插件
 
+1.将SDK解压到非中文目录；
 
+2.进入SDK目录，可以在feeds.conf.default文件内加入自定义插件源：
 
+比如加入：
+```
+src-git nas https://github.com/linkease/nas-packages.git;master
+```
+
+![img](./about/nas.jpg)
+
+3.然后执行；
+
+```
+./scripts/feeds update -a
+
+./scripts/feeds install -a
+
+make menuconfig
+```
+
+执行过程中会弹出menuconfig配置界面，选择配置好要编译的插件；
+
+4.再执行：
+```
+make -j8 download V=s  ##下载dl库(科学上网)
+```
+
+5.可以执行编译命令直接编译插件。
+
+比如编译：
+```
+make package/feeds/nas/luci-app-ddnsto/compile V=99
+```

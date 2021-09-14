@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1248px" height="388px" viewBox="0 0 1248 388" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pic_chipbg1</title>
+    <defs>
+        <linearGradient x1="100%" y1="58.6948067%" x2="-19.3452769%" y2="58.6948067%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#413B75" offset="57.5232608%"></stop>
+            <stop stop-color="#C2368C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="pic_chipbg1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.602839152">
+        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="1248" height="388" rx="16"></rect>
+    </g>
+</svg>

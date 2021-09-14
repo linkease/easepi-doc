@@ -1,0 +1,15 @@
+<svg width="100%" height="810px" viewBox="0 0 100% 810" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <radialGradient cx="50%" cy="63.3849997%" fx="50%" fy="63.3849997%" r="86.4211431%" gradientTransform="translate(0.500000,0.633850),scale(0.562500,1.000000),scale(1.000000,0.336796),translate(-0.500000,-0.633850)" id="radialGradient-1">
+                            <stop stop-color="#003B9D" offset="0%"></stop>
+                            <stop stop-color="#2F0035" stop-opacity="0.550609364" offset="34.4250917%"></stop>
+                            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+                        </radialGradient>
+                    </defs>
+                    <g id="pic_bannerbg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="bg">
+                            <rect id="Mask" fill="#000000" x="0" y="0" width="100%" height="810"></rect>
+                            <rect id="Mask" fill="url(#radialGradient-1)" x="0" y="0" width="100%" height="810"></rect>
+                        </g>
+                    </g>
+                </svg>
