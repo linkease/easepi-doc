@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="banner_bottom">
-                    <img :src="pic_banner" alt="">
+                    <img :src="pic_banner" :srcset="pic_banner + ', ' + pic_banner_2x + ' 2x'" alt="">
                 </div>
             </div>
         </div>
@@ -269,25 +269,25 @@
                         <div class="right_title" title="文档：">文档：</div>
                         <div class="right_block">
                             <div class="block_info">
-                                <a href="https://easepi.toany.net:9445/zh/guide/" title="1. 如何安装外壳">1. 如何安装外壳
+                                <a href="https://doc.linkease.com/zh/guide/easepi/case.html" title="1. 如何安装外壳">1. 如何安装外壳
                                     <img :src="arrow">
                                 </a>
                             </div>
 
                             <div class="block_info">
-                                <a href="https://easepi.toany.net:9445/zh/guide/" title="2. 如何配置成软路由">2. 如何配置成软路由
+                                <a href="https://doc.linkease.com/zh/guide/easepi/quick.html#_2-开机" title="2. 如何配置成软路由">2. 如何配置成软路由
                                     <img :src="arrow">
                                 </a>
                             </div>
 
                             <div class="block_info">
-                                <a href="https://easepi.toany.net:9445/zh/guide/" title="3. 如何开启NAS功能">3. 如何开启NAS功能
+                                <a href="https://doc.linkease.com/zh/guide/easepi/common.html#变身nas" title="3. 如何开启NAS功能">3. 如何开启NAS功能
                                     <img :src="arrow">
                                 </a>
                             </div>
 
                             <div class="block_info">
-                                <a href="https://easepi.toany.net:9445/zh/guide/" title="点击查看更多">点击查看更多</a>
+                                <a href="https://doc.linkease.com/zh/guide/easepi/" title="点击查看更多">点击查看更多</a>
                             </div>
 
                         </div>
@@ -311,6 +311,7 @@ import logo_nextcloud from "../public/home/logo_nextcloud.png"
 import logo_openwrt from "../public/home/logo_openwrt.png"
 import logo_youxijiasu from "../public/home/logo_youxijiasu.png"
 import pic_banner from "../public/home/pic_banner.png"
+import pic_banner_2x from "../public/home/pic_banner_2x.png"
 import pic_box from "../public/home/pic_box.png"
 import pic_charge from "../public/home/pic_charge.png"
 import pic_chip from "../public/home/pic_chip.png"
@@ -346,6 +347,7 @@ export default {
             logo_openwrt,
             logo_youxijiasu,
             pic_banner,
+            pic_banner_2x,
             pic_box,
             pic_charge,
             pic_chip,
