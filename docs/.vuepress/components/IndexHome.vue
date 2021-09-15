@@ -1,27 +1,32 @@
 <template>
     <div class="body">
         <!-- banner部分 -->
-        <div class="banner">
-            <div class="banner_bg" :style="bannerbgStyle"></div>
+        <div class="banner" :style="'background-image: url(\'' + bannerbgSvg + '\');width: 100%;background-size: cover;'">
+            <div class="banner_bg"></div>
             <div class="banner_content max-width">
                 <div class="banner_top">
-
-                    <div class="banner_topTitle" title="4核 RTD1296 | DDR4 4GB | eMMC 5.0 8GB">
-                        <img class="icon_left" :src="icon_left">
-                        <span>4核 RTD1296 | DDR4 4GB | eMMC 5.0 8GB</span>
-                        <img class="icon_right" :src="icon_right">
+                    <div class="flex_center"> 
+                        <div class="banner_topTitle" title="4核 RTD1296 | DDR4 4GB | eMMC 5.0 8GB">
+                            <img class="icon_left" :src="icon_left">
+                            <span>4核 RTD1296 | DDR4 4GB | eMMC 5.0 8GB</span>
+                            <img class="icon_right" :src="icon_right">
+                        </div>
                     </div>
 
                     <div class="banner_topTit" title="EasePi ARS2">EasePi ARS2</div>
                     <div class="banner_topInfo" title="EasePi ARS2，是易有云团队推出的基于RTD1296处理器且带存储的软路由开发板">EasePi ARS2，是易有云团队推出的基于RTD1296处理器且带存储的软路由开发板</div>
-                    <a href="#" class="banner_topBtn" title="立即抢购">立即抢购</a>
-                    <div class="banner_price">
-                        <img :src="pic_bannerprictag">
+                    <div class="flex_center"> <a href="#" class="banner_topBtn" title="立即抢购">立即抢购</a> </div>
+                    <div class="flex_right">
+                        <div class="banner_price">
+                            <img :src="pic_bannerprictag">
+                        </div>
                     </div>
+                    
                 </div>
-
-                <div class="banner_bottom">
-                    <img :src="pic_banner" :srcset="pic_banner + ', ' + pic_banner_2x + ' 2x'" alt="">
+                <div class="flex_center">  
+                    <div class="banner_bottom">
+                        <img :src="pic_banner" :srcset="pic_banner + ', ' + pic_banner_2x + ' 2x'" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -371,14 +376,6 @@ export default {
             icon_right
 
         }
-    },
-    computed: {
-        bannerbgStyle() {
-            return {
-                backgroundImage: ` url(${this.bannerbgSvg})`,
-                height: "100%"
-            }
-        }
     }
 }
 </script>
@@ -410,6 +407,12 @@ export default {
             align-items: center;
             text-align: center;
             flex-wrap: wrap;
+            .flex_center {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin: 0;
+            }
             .banner_top {
                 flex: 0 0 100%;
                 max-width: 726px;
@@ -426,7 +429,6 @@ export default {
                     font-weight: 400;
                     color: #ffd732;
                     line-height: 25px;
-                    margin-top: 12px;
                     position: relative;
                     margin-top: -35px;
                     .icon_left {
@@ -1064,11 +1066,20 @@ export default {
         }
         .banner {
             .banner_content {
+                display: block;
+                .flex_right {
+                    display: flex;
+                    width: 100%;
+                    justify-content: right;
+                    margin:0;
+                }
                 .banner_top {
                     z-index: 2;
                     padding: 0 10px;
+                    position: relative;
                     .banner_topTitle {
                         font-size: 14px;
+                        //margin: 0 66px;
                     }
                     .banner_topTit {
                         font-size: 46px;
@@ -1085,21 +1096,21 @@ export default {
                         line-height: 56px;
                     }
                     .banner_price {
-                        position: absolute;
-                        right: 10px;
-                        bottom: -98px;
+                        position: relative;
+                        top: 20px;
+                        bottom: 0px;
+                        margin-left: auto;
                         img {
                             max-width: 88%;
                         }
                     }
                 }
                 .banner_bottom {
-                    position: absolute;
-                    top: 492px;
-                    max-width: 100%;
+                    position: relative;
+                    top: 200px;
+                    // margin-top: 100px;
+                    max-width: 474px;
                     z-index: 1;
-                    left: 0;
-                    right: 0;
                     img {
                         width: 100%;
                         padding: 0 10px;
@@ -1116,7 +1127,7 @@ export default {
                         padding: 0 10px;
                     }
                     .part1_topInfo {
-                        margin-bottom: -80px;
+                        margin-bottom: 0px;
                         font-size: 14px;
                     }
                 }
