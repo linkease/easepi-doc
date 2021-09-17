@@ -38,7 +38,7 @@ export default {
                         },
                         {
                             label: "iStore",
-                            value: "https://github.com/linkease/istore",
+                            value: "https://doc.linkease.com/zh/guide/istore/",
                         },
                         {
                             label: "EasePi",
@@ -112,6 +112,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 40px;
     .footer-content {
         display: flex;
         flex-wrap: wrap;
@@ -121,8 +122,11 @@ export default {
             justify-content: space-between;
             flex-wrap: wrap;
             flex: 0 0 100%;
-            border-bottom: 1.5px solid;
+            border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
             margin-bottom: 10px;
+            border-top: 1.5px solid rgba(0, 0, 0, 0.7);
+            padding-top: 24px;
+            padding-bottom: 24px;
             .content_block {
                 display: flex;
                 justify-content: space-between;
@@ -137,7 +141,7 @@ export default {
                         font-weight: 600;
                         color: #000000;
                         line-height: 22px;
-                        padding-bottom: 22px;
+                        padding-bottom: 12px;
                     }
                     a {
                         display: block;
@@ -146,7 +150,7 @@ export default {
                         font-weight: 400;
                         color: #464646;
                         line-height: 20px;
-                        margin-bottom: 8px;
+                        margin-top: 8px;
                     }
                     a:hover {
                         color: #0060ff;
@@ -186,7 +190,7 @@ li {
                         max-width: 25%;
                         margin: 0;
                         padding: 0;
-                        margin-bottom: 12px;
+                        margin-bottom: 0px;
                     }
                 }
             }
@@ -207,7 +211,7 @@ li {
                         max-width: 25%;
                         margin: 0;
                         padding: 0;
-                        margin-bottom: 12px;
+                        margin-bottom: 0px;
                     }
                 }
             }
@@ -232,9 +236,9 @@ li {
                         max-width: 25%;
                         margin: 0;
                         padding: 0;
-                        margin-bottom: 12px;
+                        margin-top: 10px;
                         .content_title {
-                            padding-bottom: 6px;
+                            padding-bottom: 0px;
                         }
                     }
                 }
@@ -259,7 +263,7 @@ li {
                         max-width: 25%;
                         margin: 0;
                         padding: 0;
-                        margin-bottom: 12px;
+                        margin-top: 12px;
                         .content_title {
                             padding-bottom: 6px;
                         }
@@ -277,6 +281,7 @@ li {
         .footer-content {
             .content_text {
                 width: 100%;
+                padding-bottom: 6px;
                 .content_block {
                     width: 100%;
                     padding: 0 10px;
@@ -286,9 +291,9 @@ li {
                         max-width: 50%;
                         margin: 0;
                         padding: 0;
-                        margin-bottom: 12px;
+                        margin-bottom: 20px;
                         .content_title {
-                            padding-bottom: 6px;
+                            padding-bottom: 0px;
                         }
                     }
                 }
