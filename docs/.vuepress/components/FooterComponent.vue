@@ -281,7 +281,8 @@ li {
         .footer-content {
             .content_text {
                 width: 100%;
-                padding-bottom: 6px;
+                padding-bottom: 0px;
+                padding-top: 16px;
                 .content_block {
                     width: 100%;
                     padding: 0 10px;
