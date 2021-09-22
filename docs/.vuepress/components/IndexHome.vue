@@ -5,7 +5,7 @@
             <div class="banner_bg"></div>
             <div class="banner_content max-width">
                 <div class="banner_top">
-                    <div class="flex_center"> 
+                    <div class="flex_center">
                         <div class="banner_topTitle" title="4核 RTD1296 | DDR4 4GB | eMMC 5.0 8GB">
                             <img class="icon_left" :src="icon_left">
                             <span>4核 RTD1296 | DDR4 4GB | eMMC 5.0 8GB</span>
@@ -15,15 +15,15 @@
 
                     <div class="banner_topTit" title="EasePi ARS2">EasePi ARS2</div>
                     <div class="banner_topInfo" title="EasePi ARS2，是易有云团队推出的基于RTD1296处理器且带存储的软路由开发板">EasePi ARS2，是易有云团队推出的基于RTD1296处理器且带存储的软路由开发板</div>
-                    <div class="flex_center"> <a href="#" class="banner_topBtn" title="立即抢购">立即抢购</a> </div>
+                    <div class="flex_center"> <a href="https://koolcenter.taobao.com/" class="banner_topBtn" title="立即抢购">立即抢购</a> </div>
                     <div class="flex_right">
                         <div class="banner_price">
                             <img :src="pic_bannerprictag">
                         </div>
                     </div>
-                    
+
                 </div>
-                <div class="flex_center">  
+                <div class="flex_center">
                     <div class="banner_bottom">
                         <img :src="pic_banner" :srcset="pic_banner + ', ' + pic_banner_2x + ' 2x'" alt="">
                     </div>
@@ -1071,7 +1071,7 @@ export default {
                     display: flex;
                     width: 100%;
                     justify-content: right;
-                    margin:0;
+                    margin: 0;
                 }
                 .banner_top {
                     z-index: 2;
