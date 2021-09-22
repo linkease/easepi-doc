@@ -15,7 +15,7 @@
 
                     <div class="banner_topTit" title="EasePi ARS2">EasePi ARS2</div>
                     <div class="banner_topInfo" title="EasePi ARS2，是易有云团队推出的基于RTD1296处理器且带存储的软路由开发板">EasePi ARS2，是易有云团队推出的基于RTD1296处理器且带存储的软路由开发板</div>
-                    <div class="flex_center"> <a href="https://koolcenter.taobao.com/" class="banner_topBtn" title="立即抢购">立即抢购</a> </div>
+                    <div class="flex_center"> <a href="https://koolcenter.taobao.com/" class="banner_topBtn" title="立即抢购" target="_blank">立即抢购</a> </div>
                     <div class="flex_right">
                         <div class="banner_price">
                             <img :src="pic_bannerprictag">
