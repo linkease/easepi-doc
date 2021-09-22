@@ -67,7 +67,7 @@ module.exports = {
                             { text: 'DDNSTO', link: 'https://www.ddnsto.com/' },
                         ]
                     },
-                    { text: '固件', link: 'https://firmware.koolshare.cn/binary/ars2/' },
+                    { text: '固件', link: 'https://fw.koolcenter.com/binary/ars2/' },
                     {
                         text: '反馈', items: [
                             { text: '问题反馈', link: 'https://github.com/linkease/easepi-doc/issues' },
