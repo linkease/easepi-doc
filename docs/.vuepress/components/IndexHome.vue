@@ -274,13 +274,13 @@
                         <div class="right_title" title="文档：">文档：</div>
                         <div class="right_block">
                             <div class="block_info">
-                                <a href="https://doc.linkease.com/zh/guide/easepi/quick.html#_1-组装" title="1. 如何安装外壳">1. 如何安装外壳
+                                <a href="https://doc.linkease.com/zh/guide/easepi/case.html" title="1. 如何安装外壳">1. 如何安装外壳
                                     <img :src="arrow">
                                 </a>
                             </div>
 
                             <div class="block_info">
-                                <a href="https://doc.linkease.com/zh/guide/easepi/quick.html#_2-开机" title="2. 如何配置成软路由">2. 如何配置成软路由
+                                <a href="https://doc.linkease.com/zh/guide/easepi/quick.html#_1-开机" title="2. 如何配置成软路由">2. 如何配置成软路由
                                     <img :src="arrow">
                                 </a>
                             </div>
