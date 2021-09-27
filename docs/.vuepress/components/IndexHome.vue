@@ -38,7 +38,7 @@
                     <img class="part1_topTitle" :src="Part1_title">
                     <div class="part1_topInfo" title="丰富的接口和强劲的性能，不再限制你的创意和想法">丰富的接口和强劲的性能，不再限制你的创意和想法</div>
                 </div>
-                <img class="part1_img" :src="part1_jpg" alt="">
+                <img class="part1_img" :src="part1_diagram" alt="">
             </div>
         </div>
 
@@ -325,7 +325,7 @@ import arrow from "../public/home/arrow.png"
 import bannerSvg from "../public/svg/banner.svg"
 import bannerbgSvg from "../public/svg/bannerbg.svg"
 import pic_bannerprictag from "../public/svg/pic_bannerprictag.svg"
-import part1_jpg from "../public/svg/part1_jpg.svg"
+import part1_diagram from "../public/svg/part1_diagram.svg"
 import Part1_title from "../public/svg/Part1_title.svg"
 import pic_bannerbg from "../public/svg/pic_bannerbg.svg"
 import pic_chipbg1 from "../public/svg/pic_chipbg1.svg"
@@ -361,7 +361,7 @@ export default {
             bannerSvg,
             bannerbgSvg,
             pic_bannerprictag,
-            part1_jpg,
+            part1_diagram,
             Part1_title,
             pic_bannerbg,
             pic_chipbg1,
