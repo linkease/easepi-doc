@@ -146,75 +146,14 @@
             <div class="part4_content max-width">
                 <div class="part4_title tit" title="软件支持">软件支持</div>
                 <div class="part4_list">
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_openwrt">
-                        </div>
-                        <div class="list_blockIfo" title="Openwrt">Openwrt</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_docker">
-                        </div>
-                        <div class="list_blockIfo" title="Docker">Docker</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_jellyfin">
-                        </div>
-                        <div class="list_blockIfo" title="Jellyfin">Jellyfin</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_houseassistant">
-                        </div>
-                        <div class="list_blockIfo" title="Home Assistant">Home Assistant</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_nextcloud">
-                        </div>
-                        <div class="list_blockIfo" title="Nextcloud">Nextcloud</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_iStore">
-                        </div>
-                        <div class="list_blockIfo" title="iStore">应用市场</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_easelink">
-                        </div>
-                        <div class="list_blockIfo" title="易有云">易有云</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_ddnsto">
-                        </div>
-                        <div class="list_blockIfo" title="DDNSTO">DDNSTO</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_youxijiasu">
-                        </div>
-                        <div class="list_blockIfo" title="游戏加速">游戏加速</div>
-                    </div>
-
-                    <div class="list_block">
-                        <div class="list_blockImg">
-                            <img :src="logo_aria2">
-                        </div>
-                        <div class="list_blockIfo" title="Aria2">远程下载</div>
-                    </div>
+                    <template v-for="(item, i) in apps">
+                        <a class="list_block" :key="i" :href="item.link">
+                            <div class="list_blockImg">
+                                <img :src="item.icon">
+                            </div>
+                            <div class="list_blockIfo" :title="item.name">{{item.name}}</div>
+                        </a>
+                    </template>
                 </div>
             </div>
         </div>
@@ -338,6 +277,7 @@ import icon_rescuemode from "../public/svg/icon_rescuemode.svg"
 import icon_Soc from "../public/svg/icon_Soc.svg"
 import icon_left from "../public/svg/icon_left.svg"
 import icon_right from "../public/svg/icon_right.svg"
+import * as apps from "./apps.js"
 export default {
     data() {
         return {
@@ -373,8 +313,8 @@ export default {
             part2_img,
             part3_img,
             icon_left,
-            icon_right
-
+            icon_right,
+            apps: apps.apps
         }
     }
 }
@@ -749,6 +689,7 @@ export default {
                 flex-wrap: wrap;
                 align-items: center;
                 .list_block {
+                    display: block;
                     height: 212px;
                     flex: 0 0 100%;
                     max-width: calc(20% - 10px);

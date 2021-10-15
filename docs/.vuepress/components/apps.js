@@ -4,10 +4,10 @@ import logo_docker from "../public/home/logo_docker.png"
 import logo_easelink from "../public/home/logo_easelink.png"
 import logo_houseassistant from "../public/home/logo_houseassistant.png"
 import logo_jellyfin from "../public/home/logo_jellyfin.png"
-import logo_more from "../public/home/logo_more.png"
 import logo_nextcloud from "../public/home/logo_nextcloud.png"
 import logo_openwrt from "../public/home/logo_openwrt.png"
 import logo_youxijiasu from "../public/home/logo_youxijiasu.png"
+import logo_iStore from "../public/home/logo_iStore.png"
 
 import pic_box from "../public/home/pic_box.png"
 import pic_charge from "../public/home/pic_charge.png"
@@ -17,63 +17,64 @@ import pic_line from "../public/home/pic_line.png"
 
 export const apps = [
     {
-        name: "openwrt",
-        link: "",
+        name: "Openwrt",
+        link: "https://doc.linkease.com/zh/guide/easepi/opensource.html#%E6%9E%84%E5%BB%BA%E5%9B%BA%E4%BB%B6",
         icon: logo_openwrt,
 
     },
     {
-        name: "docker",
-        link: "",
+        name: "Docker",
+        link: " https://doc.linkease.com/zh/guide/easepi/advanced.html#%E6%89%A9%E5%AE%B9docker%E5%88%86%E5%8C%BA",
         icon: logo_docker,
 
     },
     {
-        name: "jellyfin",
-        link: "",
+        name: "Jellyfin",
+        link: "https://doc.linkease.com/zh/guide/easepi/advanced.html#jellyfin%E7%A1%AC%E8%A7%A3",
         icon: logo_jellyfin,
 
     },
     {
         name: "Home Assistant",
-        link: "",
+        link: "https://doc.linkease.com/zh/guide/easepi/advanced.html#home-assistant",
         icon: logo_houseassistant,
 
     },
     {
         name: "Nextcloud",
-        link: "",
+        link: "https://doc.linkease.com/zh/guide/easepi/advanced.html#nextcloud",
         icon: logo_nextcloud,
 
     },
+
+    {
+        name: "应用市场",
+        link: "https://doc.linkease.com/zh/guide/istore/",
+        icon: logo_iStore,
+    },
     {
         name: "易有云",
-        link: "",
+        link: "https://app.linkease.com/",
         icon: logo_easelink,
 
     },
     {
         name: "ddnsto",
-        link: "",
+        link: "https://www.ddnsto.com/",
         icon: logo_ddnsto,
 
     },
     {
         name: "游戏加速",
-        link: "",
+        link: "javascript:void(0)",
         icon: logo_youxijiasu,
 
     },
     {
         name: "Aria2",
-        link: "",
+        link: "https://doc.linkease.com/zh/guide/easepi/common.html#aria2%E4%B8%8B%E8%BD%BD",
         icon: logo_aria2,
 
-    },
-    {
-        name: "更多",
-        link: "",
-        icon: logo_more,
     }
 
 ]
