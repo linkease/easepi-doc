@@ -30,6 +30,9 @@ module.exports = {
         //     }
         // ],
         [
+            'script', { src: "/script/google-analytics.js" }
+        ],
+        [
             'script', { src: "/script/analytics.js" }
         ]
     ],
