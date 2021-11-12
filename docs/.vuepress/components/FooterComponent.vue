@@ -112,7 +112,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    background: #000;
     .footer-content {
         display: flex;
         flex-wrap: wrap;
@@ -131,15 +131,15 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                width: 1020px;
+                // width: 1020px;
                 .content_list {
-                    padding: 0;
                     margin: 0;
+                    padding: 10px 50px;
                     .content_title {
                         font-size: 16px;
                         font-family: PingFangSC-Semibold, PingFang SC;
                         font-weight: 600;
-                        color: #000000;
+                        color: #fff;
                         line-height: 22px;
                         padding-bottom: 12px;
                     }
@@ -148,7 +148,7 @@ export default {
                         font-size: 14px;
                         font-family: PingFangSC-Regular, PingFang SC;
                         font-weight: 400;
-                        color: #464646;
+                        color: #fff;
                         line-height: 20px;
                         margin-top: 8px;
                     }
@@ -162,6 +162,7 @@ export default {
             flex: 0 0 100%;
             font-size: 12px;
             color: #8e8e8e;
+            padding: 0 50px;
             a {
                 color: #8e8e8e;
             }
