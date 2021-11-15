@@ -98,6 +98,28 @@ export default {
         }
     }
 }
+@media screen and (max-width: 900px) {
+    .part1 {
+        .part1_bj {
+            padding-top: 20px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .part1 {
+        .part1_bj {
+            padding-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .part1 {
+        .part1_bj {
+            padding-top: 100px;
+        }
+    }
+}
 @media screen and (max-width: 400px) {
     .part4 {
         font-size: 40%;

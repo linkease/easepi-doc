@@ -271,6 +271,11 @@ export default {
         }
     }
 }
+@media screen and (max-width: 900px) {
+    .body {
+        padding-bottom: 0;
+    }
+}
 
 @media screen and (max-width: 719px) {
     .body {
@@ -338,6 +343,22 @@ export default {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .body {
+        .part2 {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .body {
+        .part2 {
+            padding: 0;
         }
     }
 }

@@ -93,8 +93,20 @@ export default {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .body {
+        padding-bottom: 0px;
+        .part1 {
+            .part1_content {
+                padding: 0px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 719px) {
     .body {
+        padding-bottom: 200px;
         .max-width {
             max-width: 100%;
             padding: 0 10px;
@@ -120,8 +132,15 @@ export default {
         }
     }
 }
+@media screen and (max-width: 600px) {
+    .body {
+        padding-bottom: 80px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .body {
+        padding-bottom: 180px;
         .part1 {
             .part1_content {
                 .part1_img {

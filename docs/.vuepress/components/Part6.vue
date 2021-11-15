@@ -93,6 +93,15 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
+@media screen and (max-width: 1200px) {
+    .part6 {
+        .part6_imgs {
+            .part6_img {
+                padding-top: 60px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1024px) {
     .part6 {
         .part6_content {
@@ -106,6 +115,36 @@ export default {
                     font-size: 16px;
                     margin-top: 10px;
                 }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .part6_bj {
+        .part6_bj {
+            .part6_imgs {
+                .part6_img {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .part6 {
+        .part6_imgs {
+            .part6_img {
+                padding-top: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .part6 {
+        .part6_imgs {
+            .part6_img {
+                padding-top: 60px;
             }
         }
     }

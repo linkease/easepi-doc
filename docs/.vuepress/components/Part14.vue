@@ -66,7 +66,6 @@ export default {
 <style lang="scss" scoped>
 .body {
     background-color: #000;
-    padding-bottom: 100px;
     .max-width {
         max-width: 1440px;
     }
@@ -172,6 +171,13 @@ export default {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .body {
+        .part4 {
+            padding-top: 82px;
+        }
+    }
+}
 @media screen and (max-width: 719px) {
     .body {
         font-size: 70%;
@@ -214,6 +220,34 @@ export default {
                             font-size: 10px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .body {
+        padding-bottom: 0;
+        .part4 {
+            padding-top: 40px;
+            .part4_content {
+                .part4_block {
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .body {
+        padding-bottom: 0;
+        .part4 {
+            padding-top: 40px;
+            .part4_content {
+                .part4_block {
+                    margin-top: 20px;
+                    margin-bottom: 0;
                 }
             }
         }

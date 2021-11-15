@@ -75,6 +75,13 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
+@media screen and (max-width: 1200px) {
+    .part3 {
+        .part3_img {
+            padding-top: 40px;
+        }
+    }
+}
 @media screen and (max-width: 1024px) {
     .part3 {
         .part3_content {
@@ -89,6 +96,29 @@ export default {
                     margin-top: 18px;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .part3 {
+        .part3_img {
+            padding-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .part3 {
+        .part3_img {
+            padding-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .part3 {
+        .part3_img {
+            padding-top: 80px;
         }
     }
 }

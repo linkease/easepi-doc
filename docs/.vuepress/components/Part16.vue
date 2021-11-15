@@ -58,12 +58,30 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
+@media screen and (max-width: 900px) {
+    .part16 {
+        .part16_content {
+            .part16_title {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 719px) {
     .part16 {
         font-size: 75%;
         .part16_content {
             img {
                 padding: 0 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .part16 {
+        .part16_content {
+            .part16_title {
+                padding-bottom: 40px;
             }
         }
     }

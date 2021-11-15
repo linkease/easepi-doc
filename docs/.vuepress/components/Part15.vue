@@ -144,6 +144,13 @@ export default {
         }
     }
 }
+@media screen and (max-width: 900px) {
+    .body {
+        .part5 {
+            padding-top: 82px;
+        }
+    }
+}
 
 @media screen and (max-width: 719px) {
     .body {
@@ -169,6 +176,32 @@ export default {
                             height: 98px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .body {
+        padding-bottom: 0;
+        .part5 {
+            padding-top: 40px;
+            .part5_content {
+                .part5_title {
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .body {
+        padding-bottom: 0;
+        .part5 {
+            padding-top: 40px;
+            .part5_content {
+                .part5_title {
+                    padding-bottom: 40px;
                 }
             }
         }

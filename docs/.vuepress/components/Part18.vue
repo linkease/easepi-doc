@@ -135,6 +135,15 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
+@media screen and (max-width: 900px) {
+    .part18 {
+        .part18_content {
+            .content_tit {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 760px) {
     .part18 {
         font-size: 80%;
@@ -169,6 +178,16 @@ export default {
                 display: none;
             }
         }
+    }
+}
+@media screen and (max-width: 500px) {
+    .part18 {
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .part18 {
+        padding-bottom: 40px;
     }
 }
 </style>

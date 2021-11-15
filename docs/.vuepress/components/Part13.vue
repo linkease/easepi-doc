@@ -194,6 +194,7 @@ export default {
         }
 
         .part3 {
+            padding-top: 118px;
             .part3_content {
                 flex-wrap: nowrap;
                 .part3_block {
@@ -221,6 +222,13 @@ export default {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .body {
+        .part3 {
+            padding-top: 226px;
+        }
+    }
+}
 @media screen and (max-width: 719px) {
     .body {
         .max-width {
@@ -283,6 +291,19 @@ export default {
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 500px) {
+    .body {
+        padding-bottom: 0;
+        .part3 {
+            padding-top: 206px;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .body {
+        padding-bottom: 0;
     }
 }
 </style>

@@ -57,11 +57,12 @@ export default {
             background-size: cover;
             width: 100%;
             z-index: 0;
+            height: 1258px;
         }
         .part9_img {
             position: absolute;
             z-index: 1;
-            // max-width: 448px;
+            padding-top: 200px;
         }
     }
 
@@ -98,8 +99,25 @@ export default {
 @media screen and (max-width: 1440px) {
     .part9 {
         .part9_imgs {
+            .part9_bj {
+                height: 1200px;
+                .part9_img {
+                    max-width: 600px;
+                    padding-top: 500px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1422px) {
+    .part9 {
+        .part9_imgs {
+            .part9_bj {
+                height: 1000px;
+            }
             .part9_img {
-                max-width: 600px;
+                // max-width: 500px;
+                padding-top: 200px;
             }
         }
     }
@@ -109,7 +127,7 @@ export default {
     .part9 {
         .part9_imgs {
             .part9_img {
-                max-width: 520px;
+                // max-width: 520px;
             }
         }
     }
@@ -118,7 +136,8 @@ export default {
     .part9 {
         .part9_imgs {
             .part9_img {
-                max-width: 440px;
+                max-width: 460px;
+                padding-top: 100px;
             }
         }
     }
@@ -129,7 +148,7 @@ export default {
     .part9 {
         .part9_imgs {
             .part9_img {
-                max-width: 300px;
+                padding-top: 0px;
             }
         }
         .part9_content {
@@ -142,6 +161,74 @@ export default {
                 .text_info {
                     font-size: 16px;
                     margin-top: 18px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .part9 {
+        .part9_imgs {
+            .part9_bj {
+                height: 800px;
+            }
+            .part9_img {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .part9 {
+        .part9_imgs {
+            .part9_bj {
+                height: 780px;
+            }
+            .part9_img {
+                max-width: 400px;
+                padding-top: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .part9 {
+        .part9_imgs {
+            .part9_bj {
+                height: 700px;
+            }
+            .part9_img {
+                // max-width: 260px;
+                padding-top: 140px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .part9 {
+        padding-bottom: 0px;
+        font-size: 40%;
+        .part9_imgs {
+            .part9_bj {
+                height: 600px;
+            }
+            .part9_img {
+                max-width: 260px;
+                padding-top: 140px;
+            }
+        }
+        .part9_content {
+            padding: 0 10px;
+            // margin-top: 20px;
+            .content_text {
+                .text_tit {
+                    font-size: 18px;
+                }
+                .text_info {
+                    font-size: 16px;
+                    margin-top: 18px;
+                    line-height: 32px;
                 }
             }
         }

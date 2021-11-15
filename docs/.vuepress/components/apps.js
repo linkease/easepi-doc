@@ -64,12 +64,12 @@ export const apps = [
         icon: logo_ddnsto,
 
     },
-    {
-        name: "游戏加速",
-        link: "javascript:void(0)",
-        icon: logo_youxijiasu,
+    // {
+    //     name: "游戏加速",
+    //     link: "javascript:void(0)",
+    //     icon: logo_youxijiasu,
 
-    },
+    // },
     {
         name: "Aria2",
         link: "https://doc.linkease.com/zh/guide/easepi/common.html#aria2%E4%B8%8B%E8%BD%BD",

@@ -98,6 +98,15 @@ export default {
 </style>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 1400px) {
+    .part1 {
+        .part1_imgs {
+            .part1_img {
+                padding-top: 80px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1024px) {
     .part1 {
         .part1_content {
@@ -115,9 +124,58 @@ export default {
         }
     }
 }
+@media screen and (max-width: 900px) {
+    .part1 {
+        font-size: 40%;
+        .part1_imgs {
+            .part1_img {
+                padding-top: 20px;
+            }
+        }
+        .part1_content {
+            padding: 0 10px;
+            margin-top: 40px;
+            .content_text {
+                .text_tit {
+                    font-size: 20px;
+                }
+                .text_info {
+                    font-size: 16px;
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .part1 {
+        font-size: 40%;
+        .part1_imgs {
+            .part1_img {
+                padding-top: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .part1 {
+        font-size: 40%;
+        .part1_imgs {
+            .part1_img {
+                padding-top: 100px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 500px) {
     .part1 {
         font-size: 40%;
+        .part1_imgs {
+            .part1_img {
+                padding-top: 120px;
+            }
+        }
         .part1_content {
             padding: 0 10px;
             margin-top: 40px;
