@@ -24,10 +24,13 @@ module.exports = {
         [
             'meta', { name: "keywords", content: "DDNSTO,内网穿透,设备原理,远程下载,远程开机,远程桌面,远程文件管理" },
         ],
+        // [
+        //     'meta', {
+        //         name: "viewport", content: "width=500, initial-scale=1.0"
+        //     }
+        // ],
         [
-            'meta', {
-                name: "viewport", content: "width=500, initial-scale=1.0"
-            }
+            'script', { src: "/script/fit-screen.js" }
         ],
         [
             'script', { src: "/script/google-analytics.js" }
