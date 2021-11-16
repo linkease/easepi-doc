@@ -6,7 +6,7 @@ import logo_houseassistant from "../public/home/logo_houseassistant.png"
 import logo_jellyfin from "../public/home/logo_jellyfin.png"
 import logo_nextcloud from "../public/home/logo_nextcloud.png"
 import logo_openwrt from "../public/home/logo_openwrt.png"
-import logo_youxijiasu from "../public/home/logo_youxijiasu.png"
+import logo_wangxinyun from "../public/svg/logo_wangxinyun.svg"
 import logo_iStore from "../public/home/logo_iStore.png"
 
 import pic_box from "../public/home/pic_box.png"
@@ -64,12 +64,12 @@ export const apps = [
         icon: logo_ddnsto,
 
     },
-    // {
-    //     name: "游戏加速",
-    //     link: "javascript:void(0)",
-    //     icon: logo_youxijiasu,
+    {
+        name: "网心云",
+        link: "javascript:void(0)",
+        icon: logo_wangxinyun,
 
-    // },
+    },
     {
         name: "Aria2",
         link: "https://doc.linkease.com/zh/guide/easepi/common.html#aria2%E4%B8%8B%E8%BD%BD",
