@@ -34,10 +34,10 @@
             <div class="Side">
                 <div class="cart">
 
-                    <a onclick="gtag('event', 'open_buy_link', {'method': 'Google'});" href="https://koolcenter.taobao.com/" target="_black" class="shopping"><img :src="icon_shopping"></a>
+                    <a onclick="gtag('event', 'open_buy_link', {'method': 'Google'});" href="https://item.taobao.com/item.htm?id=655381846734" target="_black" class="shopping"><img :src="icon_shopping"></a>
                     <div class="service"><img :src="icon_service">
                         <div class="code">
-                            <p>扫码微信客服</p>
+                            <p>扫码咨询微信客服</p>
                             <img :src="code">
                         </div>
                     </div>
