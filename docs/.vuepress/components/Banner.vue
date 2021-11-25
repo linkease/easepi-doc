@@ -30,6 +30,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="Side">
+                <div class="cart">
+
+                    <a onclick="gtag('event', 'open_buy_link', {'method': 'Google'});" href="https://koolcenter.taobao.com/" target="_black" class="shopping"><img :src="icon_shopping"></a>
+                    <div class="service"><img :src="icon_service">
+                        <div class="code">
+                            <p>扫码微信客服</p>
+                            <img :src="code">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </template>
@@ -42,6 +56,9 @@ import icon_right from "../public/svg/icon_right.svg"
 import pic_bannerprictag from "../public/svg/pic_bannerprictag.svg"
 import pic_banner from "../public/home/pic_banner.png"
 import pic_banner_2x from "../public/home/pic_banner_2x.png"
+import icon_service from "../public/svg/icon_service.svg"
+import icon_shopping from "../public/svg/icon_shopping.svg"
+import code from "../public/home/code.png"
 export default {
     data() {
         return {
@@ -51,7 +68,10 @@ export default {
             icon_right,
             pic_bannerprictag,
             pic_banner,
-            pic_banner_2x
+            pic_banner_2x,
+            icon_service,
+            icon_shopping,
+            code
         }
     }
 
@@ -163,6 +183,61 @@ export default {
                     width: 474px;
                     max-width: 100%;
                 }
+            }
+        }
+        .Side {
+            position: fixed;
+            bottom: 20px;
+            right: 0;
+            z-index: 999;
+            .cart {
+                .shopping {
+                    width: 60px;
+                    height: 60px;
+                    background: #464646;
+                    border-radius: 6px;
+                    position: fixed;
+                    bottom: 120px;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .service {
+                    width: 60px;
+                    height: 60px;
+                    background: #464646;
+                    border-radius: 6px;
+                    position: fixed;
+                    bottom: 48px;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    .code {
+                        display: none;
+                        p {
+                            color: #ffffff;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                        width: 228px;
+                        height: 284px;
+                        background: #464646;
+                        border-radius: 6px;
+                        position: fixed;
+                        bottom: 46px;
+                        right: 72px;
+                        img {
+                            width: 100%;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+            .service:hover .code {
+                display: block;
             }
         }
     }
