@@ -34,11 +34,17 @@
             <div class="Side">
                 <div class="cart">
 
-                    <a onclick="gtag('event', 'open_buy_link', {'method': 'Google'});" href="https://item.taobao.com/item.htm?id=655381846734" target="_black" class="shopping"><img :src="icon_shopping"></a>
+                    <a onclick="gtag('event', 'open_buy_link', {'method': 'Google'});" href="https://item.taobao.com/item.htm?id=655381846734" target="_black" class="shopping">
+                        <img :src="icon_shopping" class="shoppning_img">
+                        <img :src="icon_shoppning_hover" class="shoppning_hover">
+                    </a>
                     <div class="service"><img :src="icon_service">
                         <div class="code">
-                            <p>扫码咨询微信客服</p>
-                            <img :src="code">
+                            <div class="code_center">
+                                <p>扫码咨询微信客服</p>
+                                <img :src="code">
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -59,6 +65,7 @@ import pic_banner_2x from "../public/home/pic_banner_2x.png"
 import icon_service from "../public/svg/icon_service.svg"
 import icon_shopping from "../public/svg/icon_shopping.svg"
 import code from "../public/home/code.png"
+import icon_shoppning_hover from "../public/svg/icon_shoppning_hover.svg"
 export default {
     data() {
         return {
@@ -71,7 +78,8 @@ export default {
             pic_banner_2x,
             icon_service,
             icon_shopping,
-            code
+            code,
+            icon_shoppning_hover
         }
     }
 
@@ -192,22 +200,25 @@ export default {
             z-index: 999;
             .cart {
                 .shopping {
-                    width: 60px;
-                    height: 60px;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 8px 0px 0px 8px;
                     background: #464646;
-                    border-radius: 6px;
                     position: fixed;
-                    bottom: 120px;
+                    bottom: 126px;
                     right: 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    .shoppning_hover {
+                        display: none;
+                    }
                 }
                 .service {
-                    width: 60px;
-                    height: 60px;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 8px 0px 0px 8px;
                     background: #464646;
-                    border-radius: 6px;
                     position: fixed;
                     bottom: 48px;
                     right: 0;
@@ -216,25 +227,46 @@ export default {
                     align-items: center;
                     cursor: pointer;
                     .code {
-                        display: none;
-                        p {
-                            color: #ffffff;
-                            text-align: center;
-                            font-size: 18px;
-                        }
-                        width: 228px;
-                        height: 284px;
+                        width: 180px;
+                        height: 212px;
+                        border-radius: 8px;
                         background: #464646;
-                        border-radius: 6px;
                         position: fixed;
                         bottom: 46px;
                         right: 72px;
-                        img {
-                            width: 100%;
-                            padding: 0 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        display: none;
+                        .code_center {
+                            text-align: center;
+                            padding: 0 8px;
+                            p {
+                                color: #ffffff;
+                                font-size: 16px;
+                                line-height: 32px;
+                                padding: 0;
+                                margin: 0;
+                                padding-bottom: 2px;
+                                padding-top: 2px;
+                            }
+
+                            img {
+                                width: 100%;
+                            }
                         }
                     }
                 }
+            }
+            .shopping:hover {
+                background: #ffffff;
+            }
+            .shopping:hover .shoppning_hover {
+                display: block;
+            }
+            .shopping:hover .shoppning_img {
+                display: none;
             }
             .service:hover .code {
                 display: block;
