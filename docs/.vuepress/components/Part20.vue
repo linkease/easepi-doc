@@ -1,36 +1,19 @@
 <template>
     <div class="part8">
         <div class="part8_imgs">
-            <img class="part8_bj" :src="P8_bg1" loading="lazy" />
-            <img :src="P8_front1" alt class="part8_img" loading="lazy" />
+            <img class="part8_bj" :src="P8_bg2" loading="lazy" />
+            <img :src="P8_front2" alt class="part8_img" loading="lazy" />
         </div>
-        <div class="text_info2" title="保姆式向导配置，支持拨号、旁路由等各种模式">保姆式向导配置，支持拨号、旁路由等各种模式</div>
-
-        <div class="part8_content max-width">
-            <div class="content_text">
-                <div class="text_tit" title="更简单的Openwrt">更简单的Openwrt</div>
-                <div
-                    class="text_info"
-                    title="iStore应用市场，插件安装卸载就是这么轻松。DDNSTO，一个浏览器搞定内网穿透，远程访问Openwrt、远程终端、远程桌面..."
-                >
-                    iStore应用市场，插件安装卸载就是这么轻松。
-                    <br />DDNSTO，一个浏览器搞定内网穿透，远程访问Openwrt、远程终端、远程桌面...
-                </div>
-            </div>
-        </div>
+        <div class="text_info2" title="硬盘分区、格式化、挂载一步搞定，轻松配置存储服务">硬盘分区、格式化、挂载一步搞定，轻松配置存储服务</div>
     </div>
 </template>
 
 <script>
-import P8_bg1 from "../public/home/P8_bg1.png"
-import P8_front1 from "../public/home/P8_front1.png"
 import P8_bg2 from "../public/home/P8_bg2.png"
 import P8_front2 from "../public/home/P8_front2.png"
 export default {
     data() {
         return {
-            P8_bg1,
-            P8_front1,
             P8_bg2,
             P8_front2
         }
@@ -77,7 +60,7 @@ export default {
     .text_info2 {
         position: absolute;
         height: 60px;
-        top: 840px;
+        top: 794px;
         font-family: IBM Plex Mono;
         font-style: normal;
         font-weight: bold;
@@ -86,69 +69,41 @@ export default {
         color: #aca8ff;
         z-index: 999;
     }
-
-    .part8_content {
-        flex: 0 0 100%;
-        max-width: 100%;
-        position: absolute;
-        z-index: 999;
-        margin-top: 140px;
-        .content_text {
-            max-width: 882px;
-            margin: 0 auto;
-            text-align: center;
-            .text_tit {
-                font-family: IBM Plex Mono;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 40px;
-                color: #ffffff;
-            }
-            .text_info {
-                font-family: PingFang SC;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 30px;
-                color: rgba(288, 288, 288, 0.8);
-                margin-top: 20px;
-            }
-        }
-    }
 }
 </style>
 <style lang="scss" scoped>
 @media screen and (max-width: 1500px) {
     .part8 {
         .text_info2 {
-            top: 800px;
+            top: 720px;
         }
     }
 }
 @media screen and (max-width: 1400px) {
     .part8 {
         .text_info2 {
-            top: 780px;
+            top: 720px;
         }
     }
 }
 @media screen and (max-width: 1300px) {
     .part8 {
         .text_info2 {
-            top: 740px;
+            top: 700px;
         }
     }
 }
 @media screen and (max-width: 1260px) {
     .part8 {
         .text_info2 {
-            top: 740px;
+            top: 660px;
         }
     }
 }
 @media screen and (max-width: 1220px) {
     .part8 {
         .text_info2 {
-            top: 700px;
+            top: 660px;
         }
     }
 }
@@ -160,7 +115,7 @@ export default {
             }
         }
         .text_info2 {
-            top: 760px;
+            top: 740px;
         }
     }
 }
@@ -172,7 +127,7 @@ export default {
             }
         }
         .text_info2 {
-            top: 720px;
+            top: 700px;
         }
     }
 }
@@ -192,7 +147,7 @@ export default {
             }
         }
         .text_info2 {
-            top: 680px;
+            top: 660px;
             font-size: 20px;
         }
     }
@@ -200,7 +155,7 @@ export default {
 @media screen and (max-width: 1000px) {
     .part8 {
         .text_info2 {
-            top: 720px;
+            top: 620px;
             font-size: 20px;
         }
     }
@@ -208,7 +163,7 @@ export default {
 @media screen and (max-width: 960px) {
     .part8 {
         .text_info2 {
-            top: 680px;
+            top: 600px;
             font-size: 20px;
         }
     }
@@ -226,7 +181,7 @@ export default {
             }
         }
         .text_info2 {
-            top: 620px;
+            top: 560px;
             font-size: 20px;
         }
     }
@@ -239,13 +194,12 @@ export default {
             }
         }
         .text_info2 {
-            top: 540px;
+            top: 500px;
             font-size: 1.25rem;
         }
     }
 }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
     .part8 {
         .part8_imgs {
             .part8_img {
@@ -258,10 +212,31 @@ export default {
         }
     }
 }
+@media screen and (max-width: 700px) {
+    .part8 {
+        .part8_imgs {
+            .part8_img {
+                padding-top: 80px;
+            }
+        }
+        .text_info2 {
+            top: 480px;
+            font-size: 1.25rem;
+        }
+    }
+}
+@media screen and (max-width: 660px) {
+    .part8 {
+        .text_info2 {
+            top: 460px;
+            font-size: 1.25rem;
+        }
+    }
+}
 @media screen and (max-width: 600px) {
     .part8 {
         .text_info2 {
-            top: 450px;
+            top: 420px;
             font-size: 1.25rem;
         }
     }
@@ -269,7 +244,7 @@ export default {
 @media screen and (max-width: 500px) {
     .part8 {
         .text_info2 {
-            top: 400px;
+            top: 390px;
             font-size: 12px;
         }
     }

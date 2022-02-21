@@ -9,6 +9,7 @@
         <Part6 />
         <Part7 />
         <Part8 />
+        <Part20 />
         <Part9 />
         <Part11 />
         <Part12 />
@@ -19,9 +20,7 @@
         <Part17 />
         <Part18 />
         <Part19 />
-
     </div>
-
 </template>
 
 <script>
@@ -34,6 +33,7 @@ import Part5 from "./Part5.vue"
 import Part6 from "./Part6.vue"
 import Part7 from "./Part7.vue"
 import Part8 from "./Part8.vue"
+import Part20 from "./Part20.vue"
 import Part9 from "./Part9.vue"
 import Part11 from "./Part11.vue"
 import Part12 from "./Part12.vue"
@@ -65,7 +65,8 @@ export default {
         Part16,
         Part17,
         Part18,
-        Part19
+        Part19,
+        Part20,
     }
 }
 </script>
