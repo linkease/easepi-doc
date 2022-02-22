@@ -61,7 +61,7 @@
                         <img :src="icon_service" />
                         <div class="code">
                             <div class="code_center">
-                                <p>扫码咨询微信客服</p>
+                                <p>扫码咨询淘宝客服</p>
                                 <img :src="code" />
                             </div>
                         </div>
