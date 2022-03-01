@@ -1,12 +1,17 @@
 <template>
     <div class="part19">
-        <img class="part19_bj" :src="P11_bg" loading="lazy">
+        <img class="part19_bj" :src="P11_bg" loading="lazy" />
         <div class="part19_content max-width">
             <div class="content_text">
                 <div class="text_tit" title="易有云网络科技">易有云网络科技</div>
-                <div class="text_info" title="易有云网络科技是专注于网络设备、软硬件一体的高新技术企业。研发团队由原koolshare团队发展而来，有丰富的软硬件开发经验。企业以“源自社区，服务社区”为宗旨，推出了易有云APP、DDNSTO、EasePi等知名产品，并持续朝着“轻松拥有私有云”为目标不断奋斗。">易有云网络科技是专注于网络设备、软硬件一体的高新技术企业。研发团队由原koolshare团队
+                <div
+                    class="text_info"
+                    title="易有云网络科技是专注于网络设备、软硬件一体的高新技术企业。研发团队由原koolshare团队发展而来，有丰富的软硬件开发经验。企业以“源自社区，服务社区”为宗旨，推出了易有云APP、DDNSTO、EasePi等知名产品，并持续朝着“轻松拥有私有云”为目标不断奋斗。"
+                >
+                    易有云网络科技是专注于网络设备、软硬件一体的高新技术企业。研发团队由原koolshare团队
                     发展而来，有丰富的软硬件开发经验。企业以“源自社区，服务社区”为宗旨，推出了易有云
-                    APP、DDNSTO、EasePi等知名产品，并持续朝着“轻松拥有私有云”为目标不断奋斗。</div>
+                    APP、DDNSTO、EasePi等知名产品，并持续朝着“轻松拥有私有云”为目标不断奋斗。
+                </div>
             </div>
         </div>
     </div>

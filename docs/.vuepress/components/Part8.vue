@@ -4,7 +4,7 @@
             <img class="part8_bj" :src="P8_bg1" loading="lazy" />
             <img :src="P8_front1" alt class="part8_img" loading="lazy" />
         </div>
-        <div class="text_info2" title="保姆式向导配置，支持拨号、旁路由等各种模式">保姆式向导配置，支持拨号、旁路由等各种模式</div>
+        <div class="text_info3" title="保姆式向导配置，支持拨号、旁路由等各种模式">保姆式向导配置，支持拨号、旁路由等各种模式</div>
 
         <div class="part8_content max-width">
             <div class="content_text">
@@ -74,10 +74,9 @@ export default {
             margin-top: 100px;
         }
     }
-    .text_info2 {
-        position: absolute;
+    .text_info3 {
+        position: relative;
         height: 60px;
-        top: 840px;
         font-family: IBM Plex Mono;
         font-style: normal;
         font-weight: bold;
@@ -85,6 +84,8 @@ export default {
         line-height: 60px;
         color: #aca8ff;
         z-index: 999;
+        font-size: 2vw;
+        top: -2vw;
     }
 
     .part8_content {
