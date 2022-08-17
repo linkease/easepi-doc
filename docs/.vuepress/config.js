@@ -60,27 +60,15 @@ module.exports = {
                 lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
-                    { text: '指南', link: 'https://doc.linkease.com/zh/guide/easepi/' },
+                    { text: '文档', link: 'https://doc.linkease.com/' },
                     {
                         text: '视频号', items: [
                             { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
                             { text: '头条号', link: 'https://bit.ly/3cFVAuY' },
                         ]
                     },
-                    {
-                        text: '探索科技', items: [
-                            { text: '易有云软件', link: 'https://www.linkease.com/' },
-                            { text: 'DDNSTO', link: 'https://www.ddnsto.com/' },
-                        ]
-                    },
                     { text: '固件', link: 'https://fw.koolcenter.com/binary/ars2/' },
-                    {
-                        text: '反馈', items: [
-                            { text: '问题反馈', link: 'https://github.com/linkease/easepi-doc/issues' },
-                            { text: '关于我们', link: 'https://doc.linkease.com/zh/guide/about/' },
-
-                        ]
-                    },
+                    { text: '关于我们', link: 'https://www.linkease.com/about' },
                 ],
                 sidebar: {
                     '/zh/guide/': [
