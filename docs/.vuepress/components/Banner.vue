@@ -1,7 +1,6 @@
 <template>
     <div class="body">
-        <div class="banner"
-            :style="'background-image: url(\'' + bannerbgSvg + '\');width: 100%;background-size: cover;'">
+        <div class="banner" :style="'background-image: url(\'' + bannerbgSvg + '\');width: 100%;background-size: cover;'">
             <div class="banner_bg"></div>
             <div class="banner_content max-width">
                 <div class="banner_top">
@@ -21,11 +20,11 @@
                             href="https://item.taobao.com/item.htm?id=655381846734" class="banner_topBtn" title="立即抢购"
                             target="_blank">立即抢购</a>
                     </div>
-                    <div class="flex_right">
+                    <!-- <div class="flex_right">
                         <div class="banner_price">
                             <img :src="banner_pricetag" />
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="flex_center">
                     <div class="banner_bottom">
